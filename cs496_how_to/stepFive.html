@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Step Five</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1 style="text-align: center;">How to use Bing Maps with Windows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+	<div class="col-md-2">
+		<h4>Navigation</h4>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goHome()">Home</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepOne()">Step one</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepTwo()">Step two</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepThree()">Step Three</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFour()">Step Four</button>
+		<button type="button" class="btn btn-default btn-sm btn-block">Step Five</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSix()">Step Six</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSeven()">Step Seven</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+	</div>
+	<div class="col-md-7">
+		<h3>Resizing the iframe with the map</h3>
+		<p>The first step is to change what is shown below.  We want to insert the iframe into the home.css control.  The way Microsoft has the template structured allows for a very nice granular control of each pages styling.</p>
+		<p>In the screenshot below I have left the <strong>map.html</strong>'s styling elements unchanged.  Adding this iframe control shows how it affects the div the actual map is in, in the referenced file.  This relationship always seems to throw me for a loop which is why I wanted to cover it in detail because Microsoft has another layer or two in the CSS which is the <strong>default.css</strong> file which has parameters such as the <strong>-ms-grid</strong> and the <strong>overflow-y</strong> parameter which is going to allow the pages of the app to be scrolled down with a touch input.</p>
+		<p>First we need to fix our sizing so the map is the size we ultimately want it to be and it does not have a double pan happening inside of the iframe.</p>
+		<img class="img-responsive" src="images/example_working_04.png" alt="example_working_04.png">
+		<h3>Part of the sizing has to be static</h3>
+		<p>In the screenshot shows the emulator with an empty page and no map.  I have changed the two values in the red rectangle.  With the <strong>iframe height</strong> and the <strong>mapDiv</strong> to both be based on a percetange of their host's height and width and the result is there is no map.  The reason is the height is essentially undefined due to the Microsoft grids which are used to define the laoyout of the pages.  If only the width was a percentage and the height is a fixed pixel amount the map would show up.</p>
+		<img class="img-responsive" src="images/example_working_05.png" atl="example_working_05.png">
+		<h3>Final Sizing of the iframe and hosted Map</h3>
+		<p>I chose to change the height of the map in the map dive to an arbitrary value of <strong>800px</strong> to show how at this point we have a map of a size large enough to fill the screen but it does not pan up or down at this point.</p>
+		<img class="img-responsive" src="images/example_working_06.png" atl="example_working_06.png">
+		<h3>Setting the App's Pages to Scroll Up an Down</h3>
+		<p>Open up the <strong>default.css</strong> file and add the code shown in the image below.</p>
+		<p>As I stated earlier modifying the default.css file changes the attributes for all of the pages in our app.  I prefer to do it this was as this is a fairly innocuous change.  Said another way, I have found it to only help as it allows the users to scroll automatically when the page becomes too tall to fit on the screen.  Also since a user can change the size of the text so often it allows us to not have to worry about how the page is going to fit after the user has modified the font size.</p>
+		<img class="img-responsive" src="images/example_working_07.png" alt="example_working_07.png">
+		<br><br>
+		<button type="button" class="btn btn-primary btn-lg" onclick="goStepSix()">Step Six Passing Data between pages
+			</button>
+		<br><br><br><br>
+	</div>
+	</div>
+</div>
+</body>
+</html>

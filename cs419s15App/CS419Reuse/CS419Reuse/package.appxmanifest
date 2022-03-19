@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="25038GroupPJPApps.CorvallisReuseAndRepairDirectory" Version="1.1.0.1" Publisher="CN=4D147D95-B099-42EB-AC03-72B691D72C27" />
+  <mp:PhoneIdentity PhoneProductId="041694b3-599b-4b9c-97c4-448a8db9ba78" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>CorvallisReuseAndRepairDirectory</DisplayName>
+    <PublisherDisplayName>GroupPJPApps</PublisherDisplayName>
+    <Logo>images\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m3:VisualElements DisplayName="CorvallisReuseAndRepairDirectory" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="Find nearby locations to repair or recycle your goods." ForegroundText="light" BackgroundColor="transparent">
+        <m3:DefaultTile Square71x71Logo="images\Square71x71Logo.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="images\SplashScreen.png" />
+      </m3:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <Capability Name="picturesLibrary" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

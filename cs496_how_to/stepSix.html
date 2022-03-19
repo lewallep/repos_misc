@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Step Five</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1 style="text-align: center;">How to use Bing Maps with Windows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+	<div class="col-md-2">
+		<h4>Navigation</h4>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goHome()">Home</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepOne()">Step one</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepTwo()">Step two</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepThree()">Step Three</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFour()">Step Four</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFive()">Step Five</button>
+		<button type="button" class="btn btn-default btn-sm btn-block">Step Six</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSeven()">Step Seven</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+	</div>
+	<div class="col-md-7">
+		<h3>Next Steps</h3>
+		<p>Now we have a functioning map and hopefully some of the specific Windows Phone functionality is less of a mystery.  But we might want to input data on a separate page and then have the map react to it on it's own page.  So how do we do that.  We need to take care of two things.  One we need to be able to react to a <strong>click</strong> on a button or a link.  However, I would <strong>STRONGLY</strong> suggest using buttons as it makes for what I have found the implementation to be cleaner as the links when they are used actually link to an outside source and not used as a link to an outside web page or resource and to use as navigation items inside the app itself.</p>
+		<p>To do this we need to change the default behavior of the buttons and JavaScript navigation to work for the windows phone.</p>
+		<p>First add a new folder to hold all of the related files to our page.  Right click on <strong>pages</strong> folder.  Then select a new folder and name it <strong>page2</strong>.</p>
+		<p>Now right click on the <strong>page2</strong> folder and click on <strong>add</strong> then <strong>New Item</strong>.</p>
+		<p>From the list of new items that pops up select <strong>Page Control</strong> and name the new Page Control <strong>page2.html</strong>.  This will addd all of the items we need to control this page.  The <strong>page2.html</strong> file, the <strong>page2.css</strong> and <strong>page2.js</strong>.</p>
+		<img class="img-responsive" src="images/example_working_08.png" alt="example_working_08.png">
+		<h3>Adding the code to handle Navigation</h3>
+		<p>We are going to add a basic button and then listen for the even of a click.  Then we are going to change the defualt behavior of this button to a Windows Phone navigation event with the help of those Microsoft.Phone.WinJS.2.1 libraries.</p>
+		<p>Add a button in the <strong>home.html</strong> file.  We wil do it on <strong>line 24</strong> and all we need to do is add a basic button with the following id field <strong>id="goPage2"</strong>.
+		<img class="img-responsive" src="images/example_working_09.png" alt="example_working_09.png">
+		<p>Now we just have to add the code to the corresponding JavaScript file because when we made our project Visual Studio automatically created the other support files and added the references to them for us.</p>
+		<p>Open up the <strong>home.js</strong> files and add the following code so your file looks the same as the image below.  The image below show the entire contents of the <strong>home.js</strong> file.  Nothing is left out.  This is the way I recommend always navigating as it seems to be flexible to add more buttons and navigation and works very smoothly.  It is also easy to add more funtionality into the functions as from this point on it is like using JavaScript in a web page which is the whole purpose of using JavaScript for the Windows Phone in the first place.</p>
+		<img class="img-responsive" src="images/example_working_10.png" alt="example_working_10.png">
+		<h3>What happens if I didn't follow your Words of Wisdom Phil?</h3>
+		<p>I am glad you asked because now I get to vent about what was making me so frustrate for a long time trying to figure this out.  If you don't stop the default behavior and use the Windows Libraries for their phone and say you try to use the following code . . .</p>
+		<img class="img-responsive" src="images/example_working_12.png" alt="example_working_12.png">
+		<p>You can see I commented out the lines <strong>14</strong> and <strong>15</strong> and then added a bit of code @<strong>Line 16</strong> which is the regular code we would use for a page redirect or navigation in a basic web page.</p>
+		<p>But when you do this in the Windows Phone Enviornment then you get this output on the Emulator . . .</p>
+		<img class="img-responsive" src="images/example_working_11.png" atl="example_working_11.png">
+		<br><br>
+		<button type="button" class="btn btn-primary btn-lg" onclick="goStepSeven()">Now for some Data handling!</button>
+		<br><br><br><br>
+	</div>
+</div>
+</div>
+</body>
+</html>

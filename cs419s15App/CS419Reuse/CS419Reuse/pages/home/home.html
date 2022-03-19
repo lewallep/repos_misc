@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CRRD: Home</title>
+
+    <!-- WinJS references -->
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+
+    <link href="home.css" rel="stylesheet" />
+    <script src="home.js"></script>
+</head>
+<body>
+    <div class="wrapper homepage">
+        <nav aria-label="Top navigation" class="topnav">
+            <div class="left-nav"></div>
+            <div class="pagetitle">Home</div>
+            <div class="right-nav"></div>
+        </nav>
+        <header aria-label="Header content" role="banner">
+            <div class="logo">
+                <img src="../../images/crrd_logo.png" />
+            </div>
+            <h1 class="titlearea">
+                <span class="pagetitle">Corvallis Reuse and Repair Directory</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="category-select">
+                <div class="main-category-select">
+                    <label for="categories">Select a Category</label>
+                    <select id="categories">
+                        <option value="">Select...</option>
+                    </select>
+                </div>
+                <div class="sub-category-select">
+                    <label for="subcategories">Select a Subcategory</label>
+                    <select id="subcategories" disabled>
+                        <option value="">Select main category first</option>
+                    </select>
+                </div>
+                <button class="category-select-submit" disabled>Find Businesses</button>
+            </div>
+            <div class="republic-links">
+                <h4>Republic Services Links</h4>
+                <p>
+                    <a href="http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycledepot.pdf" class="pdf-link">Recycle Depot - Accepted Materials</a>
+                </p>
+                <p>
+                    <a href="http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf" class="pdf-link">Curbside Recycling - Accepted Materials</a>
+                </p>
+            </div>
+            <div class="csc-logo">
+                <p>
+                    <em>Proudly managed by the</em><br />
+                    <a href="http://sustainablecorvallis.org/"><img src="/images/csc_logo.png" width="150" /></a>
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

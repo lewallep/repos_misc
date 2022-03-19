@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CRRD: Business Details</title>
+
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+
+    <link href="business-detail.css" rel="stylesheet" />
+    <script src="business-detail.js"></script>
+</head>
+<body>
+    <div class="wrapper page-business-detail">
+        <nav aria-label="Top navigation" class="topnav">
+            <div class="left-nav">&lt; List</div>
+            <div class="pagetitle"></div>
+            <div class="right-nav"></div>
+        </nav>
+        <section aria-label="Main content" role="main">
+            <div class="detail-row interactive-row business-phone">
+                <span class="detail-icon phone-icon"></span>
+                <div class="detail-info phone-info"></div>
+            </div>
+            <div class="detail-row interactive-row business-website">
+                <span class="detail-icon website-icon"></span>
+                <div class="detail-info website-info"></div>
+            </div>
+            <div class="detail-row interactive-row business-address">
+                <span class="detail-icon address-icon"></span>
+                <div class="detail-info address-info"></div>
+            </div>
+            <div class="detail-row business-hours"></div>
+            <div class="detail-row business-notes"></div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PCL_WORKSTATION</Machine>
+    <WindowsUser>Philip</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>041694b3-599b-4b9c-97c4-448a8db9ba78</PackageIdentityName>
+    <IntermediateOutputPath>E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.css">
+      <PackagePath>css\ui-themed.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.theme-dark.css">
+      <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\css\ui-themed.theme-light.css">
+      <PackagePath>css\ui-themed.theme-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-list\business-list.css">
+      <PackagePath>pages\business-list\business-list.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-map\business-map.css">
+      <PackagePath>pages\business-map\business-map.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-detail\business-detail.css">
+      <PackagePath>pages\business-detail\business-detail.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\html\map.html">
+      <PackagePath>html\map.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-list\business-list.html">
+      <PackagePath>pages\business-list\business-list.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-map\business-map.html">
+      <PackagePath>pages\business-map\business-map.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-detail\business-detail.html">
+      <PackagePath>pages\business-detail\business-detail.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\html\map.js">
+      <PackagePath>html\map.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\js\jquery-2.1.4.min.js">
+      <PackagePath>js\jquery-2.1.4.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-list\business-list.js">
+      <PackagePath>pages\business-list\business-list.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-map\business-map.js">
+      <PackagePath>pages\business-map\business-map.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\pages\business-detail\business-detail.js">
+      <PackagePath>pages\business-detail\business-detail.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\crrd_logo.png">
+      <PackagePath>images\crrd_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\csc_logo.png">
+      <PackagePath>images\csc_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\pdf_icon.png">
+      <PackagePath>images\pdf_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\SplashScreen.scale-240.png">
+      <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CRRD: Business Map</title>
+
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+
+    <link href="business-map.css" rel="stylesheet" />
+    <script src="business-map.js"></script>
+</head>
+<body>
+    <div class="wrapper page-business-map">
+        <nav aria-label="Top navigation" class="topnav">
+            <div class="left-nav">&lt; Home</div>
+            <div class="pagetitle">[Category Name]</div>
+            <div class="right-nav">List View</div>
+        </nav>
+        <section class="mapSection" aria-label=" Main content" role="main">
+            <div id="locationSection" class="subsection" aria-label="Location section">
+                <iframe id="map" src="ms-appx-web:///html/map.html" aria-label="Map"></iframe>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

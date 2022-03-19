@@ -1,0 +1,50 @@
+You log goes in this  file.
+#Philip Lewallen
+#CS290-Assignment3
+
+Start Time: 	Tue, 20 Jan 2015 12:00:25 -0800
+End Times:		Tue, 20 Jan 2015 12:29:38 -0800
+Tasks: 		 	During this time I cloned the source repository for this assignment and then sent off a message in the forums detailing the issues I am having with the supplied script for git log.
+
+Start Time: 	Fri, 23 Jan 2015 02:00:25 -0800
+End Times:		Fri, 23 Jan 2015 03:07:53 -0800
+Tasks:			Worked on the homework.  I tested to make sure my test script qunit_runner.html was working properly and got through the variables portion as best as I could.
+
+Start Time: 	Fri, 23 Jan 2015 03:55:25 -0800
+End Times:		Fri, 23 Jan 2015 06:46:53 -0800
+Tasks:			Working on the Parse git function only.  Had a huge amount of trouble and no progress.
+
+Start Time: 	Sat, 24 Jan 2015 10:30:15 -0800
+End Times:		Sat, 24 Jan 2015 11:31:38 -0800
+Tasks:			Finish up the functions.js file.  I was only able to use the function constructor to return an object when I modified
+that particular part of the code with a line containing "return this;"
+
+Start Time:		Sat, 24 Jan 2015 01:20:56 -0800
+End Times:		Sat, 24 Jan 2015 05:32:47 -0800
+Tasks:			I worked on the objects.js and specifical the Create a constructor function for a MessageLog object.  I had very little progress. in any form.  For one I found the question to be very confusing for an introudction class where we are learning the syntax.  To have such freedom is a hinderance when frankly I would like to learn some best practices of syntax and personally my opinion is this would be an excellent place to teach it as we could use these lessons and examples later in the course when we are working on our project.
+
+Start Time:		Sat, 24 Jan 2015 09:45:56 -0800
+End Times:		Sat, 24 Jan 2015 12:20:47 -0800
+Tasks:			I worked the objects.js script and specifically the MessageLog constructor.  It was very difficult to finally understand what I needed to do and then to produce an enviornment to test it.  It was difficult because this is really the first time I have ever used JavaScript and I feel the lectures and materials could still be improved to connect some of the dots for true beginners.
+
+Begin Assignment-3 Part 2
+
+Start Time:		Wed, 28 Jan 2015 12:01:23 -0800
+End Times:		Wed, 28 Jan 2015 04:45:32 -0800
+Tasks:			I started the second part of the assignment.  
+
+Start Time:		Sat, 07 Feb 2015 07:31:56 -0800
+End Times:		Sat, 07 Jan 2015 10:30:21 -0800
+Tasks:			Continueing on part two I was trying to get a handle on the AJAX calls.  It was during this time I had a broken collarbone.
+
+Start Time:		Sun, 08 Jan 2015 03:02:34 -0800
+End Times:		Sun, 08 Jan 2015 05:30:47 -0800
+Tasks:			Ajax and why I couldn't handle my call asyncronously without blowing out my objects.  I figured this out the next day.
+
+Start Time:		Mon, 09 Jan 2015 04:30:17 -0800
+End Times:		Mon, 09 Jan 2015 09:20:31 -0800
+Tasks:			continueing with the ajax call for multiple calls.  Finally figured out my many mistakes. 
+
+Start Time:		Tue, 10 Jan 2015 09:30:11 -0800
+End Times:		Tue, 10 Jan 2015 02:40:21 -0800
+Tasks:			finished with the local storage logic.  And testing on the results of everything to make sure the local objects do not appear in the list of new gists.  

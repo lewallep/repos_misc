@@ -1,0 +1,54 @@
+﻿.page-business-detail section[role="main"] {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto auto;
+}
+
+.detail-row {
+    padding: 20px;
+    border-bottom: 1px #444 solid;
+}
+
+.interactive-row {
+    display: -ms-grid;
+    -ms-grid-columns: 40px 1fr;
+    -ms-grid-rows: auto;
+}
+
+.detail-icon {
+    -ms-grid-column: 1;
+    -ms-grid-column-align: center;
+    font-family: 'Segoe UI Symbol';
+}
+.detail-info {
+    -ms-grid-column: 2;
+}
+
+.phone-icon:before {
+    content: '\E13A';
+}
+.business-phone {
+    -ms-grid-row: 1;
+}
+
+.website-icon:before {
+    content: '\E128';
+}
+.business-website {
+    -ms-grid-row: 2;
+}
+
+.address-icon:before {
+    content: '\E139';
+}
+.business-address {
+    -ms-grid-row: 3;
+}
+
+.business-hours {
+    -ms-grid-row: 4;
+}
+
+.business-notes {
+    -ms-grid-row: 5;
+}

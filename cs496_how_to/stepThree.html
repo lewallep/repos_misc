@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Step Three</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1 style="text-align: center;">How to use Bing Maps with Windows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+		<div class="col-md-2">
+			<h4>Navigation</h4>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goHome()">Home</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepOne()">Step one</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepTwo()">Step two</button>
+			<button type="button" class="btn btn-default btn-sm btn-block">Step Three</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFour()">Step Four</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFive()">Step Five</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSix()">Step Six</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSeven()">Step Seven</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+		</div>
+		<div class="col-md-7">
+			<h3>What happens when you copy and paste the AJAX API ?</h3>
+			<p>You get this from the emulator. Below this screenshot of the Emulator output is the exact code used in the home.html file in our MapApp project.  As you can see the emulator does translate the page to exactly nothing in this case.  Why?  Well to be honest I can say that with certainty.  I have been through the Microsoft documentation and I can't find a direct explanation from them as to why this behavior happens.  We know it doesn't but I didn't ever find a lesson with the title, "This is how one integrates Bing maps into the Windows Phone using Javascript.</p>
+			<p>But I did manage to paste together a solution so onto Step Four to see how I did it.</p>
+			<img src="images/example_failure_01.png" alt="Windows phone emulator failing">
+			<h3>Code copy and pasted from AJAX API help pages</h3>
+			<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+&lt;script type="text/javascript" 
+	src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+	  function GetMap()
+	  {   
+	     var map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), 
+	                       {credentials: "Your Bing Maps Key",
+	                        center: new Microsoft.Maps.Location(45.5, -122.5),
+	                        mapTypeId: Microsoft.Maps.MapTypeId.road,
+	                        zoom: 7});
+	  }
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body onload="GetMap();"&gt;
+&lt;div id='mapDiv' style="position:relative; width:400px; height:400px;">&lt;/div&gt;      
+&lt;/body&gt;
+&lt;/html&gt;
+			</pre>
+		<button type="button" class="btn btn-primary btn-lg" onclick="goStepFour()">Integrating the map into the Phone with an iframe!</button>
+				<br><br><br><br>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

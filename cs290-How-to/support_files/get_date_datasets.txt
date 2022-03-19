@@ -1,0 +1,220 @@
+{
+  "status": "ok",
+  "count": 2,
+  "count_total": 2,
+  "pages": 1,
+  "posts": [
+    {
+      "id": 648,
+      "type": "post",
+      "slug": "ocean-color",
+      "url": "http:\/\/data.nasa.gov\/ocean-color\/",
+      "status": "publish",
+      "title": "Ocean Color",
+      "title_plain": "Ocean Color",
+      "content": "<p>Satellite-derived Ocean Color Data sets from historical and currently operational NASA and International Satellite missions including the NASA Coastal Zone Color Scanner (CZCS) (1978 &#8211; 1986), NASDA&#8217;s Ocean Color Temperature Scanner (OCTS) (1996 &#8211; 1997), NASA\/GeoEYE Sea-viewing Wide Field-of-view Sensor (SeaWiFS) (1997 &#8211; 2010), NASA&#8217;s Moderate Resolution Imaging Spectroradiometer (MODIS) on both the Terra and Aqua spacecraft (2000 &#8211; present) and ESA&#8217;s medium-spectral resolution, imaging spectrometer (MERIS) (2002 &#8211; present).<\/p>\n<p><strong>Level-1A Data Products<\/strong><br \/>\nLevel-1A products contain the raw radiance counts from all bands as well as spacecraft and instrument telemetry. Calibration and navigation data, and instrument and selected spacecraft telemetry are also included. Level-1A data are used as input for geolocation, calibration, and processing.<\/p>\n<p><strong>Ocean Level-2 Data Products<\/strong><br \/>\nEach Level-2 product is generated from a corresponding Level-1A product.The main data contents of the product are the geophysical values for each pixel,derived from the Level-1A raw radiance counts by applying the sensor calibration, atmospheric corrections, and bio-optical algorithms. Each Level-2 product corresponds exactly in geographical coverage (scan-line and pixel extent) to that of its parent Level-1A product and is stored in one physical HDFfile.<\/p>\n<p><strong>Ocean Level-3 Binned Data Products<\/strong><br \/>\nLevel-3 binned data products consist of the accumulated data for all Level-2 data corresponding to a period of one day, 8 days, a calendar month, or a calendar year.<\/p>\n<p>Each Level-3 binned data product is stored in one or more HDF files. Each multi-file product includes a main file containing all product-level metadata and data for each bin that are common to all the binned geophysical parameters, and multiple subordinate files, each of which contains data of one binned geophysical parameter for all bins. Subordinate files must be read in conjunction with the associated main file.<\/p>\n<p><strong>Ocean Level-3 Standard Mapped Image Products<\/strong><br \/>\nThe Level-3 standard mapped image (SMI) products are image representations of binned data products generated from SeaWiFS, MODIS, OCTS or CZCS data. The data in each SMI product represents an image of the parameter specified by the global attribute Parameter. This object is a two-dimensional array of an Equidistant Cylindrical (also known as Platte Carre) projection of the globe. The values can be stored as bytes, 2-byte integers, or 4- byte floats. The first two are scaled real values and may be converted projected to geophysical values using the global attributes Scaling, Scaling Equation, Base, Slope, and Intercept.<\/p>\n<p>The standard SMI products are generated from binned data products, one for each of the following geophysical parameters: chlorophyll a concentration, angstrom coefficient, normalized water-leaving radiance at each visible wavelength, aerosol optical thickness, epsilon, and diffuse attenuation coefficient at 490 nm. For MODIS, products are generated for sea surface temperature (SST), 4 micron SST (SST4) and nighttime SST (NSST). Thus, each SMI product represents data binned over the period covered by the parent product. The arithmetic mean is used in each case to obtain the values for the SMI grid points from the binned data products. Each SMI product contains one image of a geophysical parameter and is stored in one physical HDF file.<\/p>\n",
+      "excerpt": "<p>Satellite-derived Ocean Color Data sets from historical and currently operational NASA and International Satellite missions including the NASA Coastal Zone Color Scanner (CZCS) (1978 &#8211; 1986), NASDA&#8217;s Ocean Color Temperature Scanner (OCTS) (1996 &#8211; 1997), NASA\/GeoEYE Sea-viewing Wide Field-of-view Sensor&#8230;<\/p>\n",
+      "date": "2011-10-13 20:50:20",
+      "modified": "2011-10-13 20:50:20",
+      "categories": [
+        {
+          "id": 61,
+          "slug": "climate",
+          "title": "Climate",
+          "description": "#4C1A23",
+          "parent": 0,
+          "post_count": 29
+        },
+        {
+          "id": 19,
+          "slug": "earth-science",
+          "title": "Earth Science",
+          "description": "#849972",
+          "parent": 0,
+          "post_count": 37
+        }
+      ],
+      "tags": [
+        {
+          "id": 412,
+          "slug": "chlorophyll",
+          "title": "chlorophyll",
+          "description": "",
+          "post_count": 1
+        },
+        {
+          "id": 171,
+          "slug": "ocean-color",
+          "title": "ocean color",
+          "description": "",
+          "post_count": 2
+        },
+        {
+          "id": 413,
+          "slug": "sediment",
+          "title": "sediment",
+          "description": "",
+          "post_count": 1
+        }
+      ],
+      "author": {
+        "id": 45,
+        "slug": "sherron",
+        "name": "Sean Herron",
+        "first_name": "Sean",
+        "last_name": "Herron",
+        "nickname": "Sean Herron",
+        "url": "",
+        "description": "Sean Herron is a digital native who embraces the use of technology to create and enable collaborative projects. As a member of NASA's Open Government team, Herron works to facilitate open source and open data projects throughout the agency and promotes the use of technology solutions to common problems. Herron has previously worked in the Space Operations office at NASA Headquarters, where he contributed to public outreach projects involving the Space Shuttle and International Space Station. He is an avid web developer and advocate for engaging the public in NASA's mission of exploration and discovery. He holds a degree in Public Policy from the Maxwell School of Citizenship and Public Affairs at Syracuse University."
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "open",
+      "custom_fields": {
+        "acronym": [
+          ""
+        ],
+        "more_info_link": [
+          "http:\/\/oceancolor.gsfc.nasa.gov\/"
+        ],
+        "datagov_id": [
+          ""
+        ],
+        "availability": [
+          "Public"
+        ],
+        "curator_type": [
+          "Person"
+        ],
+        "curator_person_name": [
+          "Gene Carl Feldman"
+        ],
+        "curator_person_email": [
+          "gene.c.feldman@nasa.gov"
+        ],
+        "curator_url": [
+          ""
+        ],
+        "curator_center": [
+          "Goddard Space Flight Center"
+        ],
+        "curator_org_name": [
+          ""
+        ],
+        "curator_org_email": [
+          ""
+        ]
+      }
+    },
+    {
+      "id": 626,
+      "type": "post",
+      "slug": "nasa-earth-exchange",
+      "url": "http:\/\/data.nasa.gov\/nasa-earth-exchange\/",
+      "status": "publish",
+      "title": "NASA Earth Exchange",
+      "title_plain": "NASA Earth Exchange",
+      "content": "<p>The NASA Earth Exchange (NEX) represents a new platform for the Earth science community that provides a mechanism for scientific collaboration and knowledge sharing. NEX combines state-of-the-art supercomputing, Earth system modeling, workflow management, NASA remote sensing data feeds, and a knowledge sharing platform to deliver a complete work environment in which users can explore and analyze large datasets, run modeling codes, collaborate on new or existing projects, and quickly share results among the Earth Science communities.<\/p>\n",
+      "excerpt": "<p>The NASA Earth Exchange (NEX) represents a new platform for the Earth science community that provides a mechanism for scientific collaboration and knowledge sharing. NEX combines state-of-the-art supercomputing, Earth system modeling, workflow management, NASA remote sensing data feeds, and a&#8230;<\/p>\n",
+      "date": "2011-10-12 15:05:59",
+      "modified": "2011-10-12 19:31:58",
+      "categories": [
+        {
+          "id": 19,
+          "slug": "earth-science",
+          "title": "Earth Science",
+          "description": "#849972",
+          "parent": 0,
+          "post_count": 37
+        }
+      ],
+      "tags": [
+        {
+          "id": 21,
+          "slug": "atmosphere",
+          "title": "atmosphere",
+          "description": "",
+          "post_count": 11
+        },
+        {
+          "id": 410,
+          "slug": "carbon-cycle",
+          "title": "carbon cycle",
+          "description": "",
+          "post_count": 1
+        },
+        {
+          "id": 61,
+          "slug": "climate",
+          "title": "Climate",
+          "description": "",
+          "post_count": 3
+        },
+        {
+          "id": 409,
+          "slug": "ecosystem",
+          "title": "ecosystem",
+          "description": "",
+          "post_count": 1
+        },
+        {
+          "id": 411,
+          "slug": "water-cycle",
+          "title": "water cycle",
+          "description": "",
+          "post_count": 1
+        }
+      ],
+      "author": {
+        "id": 45,
+        "slug": "sherron",
+        "name": "Sean Herron",
+        "first_name": "Sean",
+        "last_name": "Herron",
+        "nickname": "Sean Herron",
+        "url": "",
+        "description": "Sean Herron is a digital native who embraces the use of technology to create and enable collaborative projects. As a member of NASA's Open Government team, Herron works to facilitate open source and open data projects throughout the agency and promotes the use of technology solutions to common problems. Herron has previously worked in the Space Operations office at NASA Headquarters, where he contributed to public outreach projects involving the Space Shuttle and International Space Station. He is an avid web developer and advocate for engaging the public in NASA's mission of exploration and discovery. He holds a degree in Public Policy from the Maxwell School of Citizenship and Public Affairs at Syracuse University."
+      },
+      "comments": [],
+      "attachments": [],
+      "comment_count": 0,
+      "comment_status": "open",
+      "custom_fields": {
+        "acronym": [
+          "NEX"
+        ],
+        "more_info_link": [
+          "https:\/\/c3.nasa.gov\/nex\/"
+        ],
+        "datagov_id": [
+          ""
+        ],
+        "availability": [
+          "Public"
+        ],
+        "curator_type": [
+          "Person"
+        ],
+        "curator_person_name": [
+          ""
+        ],
+        "curator_person_email": [
+          ""
+        ],
+        "curator_url": [
+          "https:\/\/c3.nasa.gov\/nex\/contactus\/?next=\/nex\/"
+        ],
+        "curator_center": [
+          "Ames Research Center"
+        ],
+        "curator_org_name": [
+          ""
+        ],
+        "curator_org_email": [
+          ""
+        ]
+      }
+    }
+  ]
+}

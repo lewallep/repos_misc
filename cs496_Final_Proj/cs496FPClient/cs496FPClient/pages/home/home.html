@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+    <script src="/js/helpers.js"></script>
+
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to cs496FPClient!</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <h2>Plese login to see your Restaurant Datbase</h2>
+            <button id="navPage2">Go To Page 2</button><button id="logout">Logout</button><br />
+            <label>UserName: </label><input id="usernameIn" type="text" value="user1"/><br />
+            <label>Password: </label><input id="passwordIn" type="text" value="pass"/>
+            <button id="loginCredentials">Returning User Login</button><br />
+
+            <textarea id="nameOfUser" rows="2"></textarea>
+
+            <h2>New User Register</h2>
+
+            <label>UserName: </label><input id="newNameIn" type="text" value="user4"/><br />
+            <label>Password: </label><input id="newPassIn" type="text" value="pass4"/>
+            <button id="newUserReg">Register New User</button>
+            
+                     
+        </section>
+    </div>
+</body>
+</html>
+

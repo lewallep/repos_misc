@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Step One</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1 style="text-align: center;">How to use Bing Maps with Windows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+		<div class="col-md-2">
+			<h4>Navigation</h4>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goHome()">Home</button>
+			<button class="btn btn-default btn-sm btn-block">Step One</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepTwo()">Step Two</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepThree()">Step Three</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFour()">Step Four</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFive()">Step Five</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSix()">Step Six</button>	
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSeven()">Step Seven</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+		</div>
+		<div class="col-md-7">
+			<h3>What you need to get started</h3>
+			<ul>
+				<li>Windows 8.1</li>
+				<li>Visual Studio 2013.*(See note below this list)</li>
+				<li>A Bing Maps key</li>
+			</ul>
+			<br>
+			<h3>Where do I go to get thes items if I don't have them?</h3>
+			<p>Well I'm glad you asked.  For Windows 8.1 if you are a student check to see if your school has Dreamspark.  If they don't you will need to go to the a store.</p>
+			<p>For Visual studio also check to see if your school has Dreamspark if not, go to an online store such as newegg.</p>
+			<p>For the Bing Maps key go here <a href="https://www.bingmapsportal.com/">bingmapsportal.com</a>, sign in with a microsoft account and get the free developer key.</p>
+			<br>
+			<h3>Start your Visual Studio Project</h3>
+			<p>In Visual Studio go to the FILE pulldown menu and select New -> Project.</p>
+			<p>At this point any tempalte will work just fine but for the sake of simplicity we are not going to choose the Pivot App tempalte as it comes with much more extra code than we need for focusing on the maps.</p>
+			<p>The blank app would be fine but we are going to want to use a button to move from a data entry page to the page actually housing the map.  So the Navigation template will fit the need for a basic structure nicely.</p>
+			<img class="img-responsive" src="images/new_project.png" alt="new_project.png needs to be here.">
+			<br>
+			<p>* While Visual Studio Express (the free version) works perfectly by itself, my other classmates and I when we were working in a group found an issue with opening up a project in Visual Studio Express when it was created in Visual Studio Ultimate.  I would take care when mixing the use between different versions of Visual Studio.</p>
+			<button type="button" class="btn btn-primary btn-lg" onclick="goStepTwo()">
+				Onto Step two.  What to focus on.</button>
+				<br><br><br><br>
+		</div>
+	</div>
+</div>
+</body>
+</html>

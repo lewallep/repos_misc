@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Step Two</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body onload="GetMap();">
+<div class="container-fluid">	
+	<h1 style="text-align: center;">How to use Bing Maps with Windows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+		<div class="col-md-2">
+			<h4>Navigation</h4>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goHome()">Home</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepOne()">Step One</button>
+			<button type="button" class="btn btn-default btn-sm btn-block">Step Two</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepThree()">Step Three</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFour()">Step Four</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFive()">Step Five</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSix()">Step Six</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSeven()">Step Seven</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+		</div>
+		<div class="col-md-7">
+			<h3>Try the Bing Maps AJAX Control API</h3>
+			<p>This API documentation can be 
+				<a href="https://msdn.microsoft.com/en-us/library/gg427624.aspx">found here.</a> It seems good at first.  Look more closely and pretty quickly we see all of the examples are meant for web pages.  And for putting a Bing Map into a webpage they were very nicely.  Below is an example of the code working in this web page with some basic controls.</p>
+			<div id='mapDiv' style="position:relative; width:100%; height:500px;"></div>
+			<p>No where does this documentatin say you need to host this in an iframe when you have it in the phone app. 	Which is really the key to this whole thing.</p>
+			<h3>What did I do here?</h3>
+			<p>I copied and pasted part of code from the link above. To see where I copied from go to the bottom of the page.</p>
+			<img src="images/intial_map_constructor.png" alt="There should be an image of a map source code here.">
+			<p>The script at the top of the page is to the map control library. Beyond this to replicate what is in this example here you insert your Bing map key into the place where there are quotes.  And then find the geolocation points of your favorite place and in this case set the <strong>zoom</strong> to <strong>16</strong> to zoom in fairly close.</p>
+			<p>And I changed the size in the div tag to <strong>width=100%</strong></p>
+			<h3>Iframes are your friend</h3>
+			<p>On the next page we are going to show what happens when you take this code and insert it directly into the Windows Phone Enviornment</p>
+			<button type="button" class="btn btn-primary btn-lg" onclick="goStepThree()">Integrating the map into the Phone!</button>
+		</div>
+	</div>	
+</div>
+</body>
+</html>

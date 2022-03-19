@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Step Four</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1 style="text-align: center;">How to use Bing Maps with Windows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+	<div class="col-md-2">
+		<h4>Navigation</h4>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goHome()">Home</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepOne()">Step one</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepTwo()">Step two</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepThree()">Step Three</button>
+		<button type="button" class="btn btn-default btn-sm btn-block">Step Four</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFive()">Step Five</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSix()">Step Six</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSeven()">Step Seven</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+	</div>
+	<div class="col-md-7">
+		<h3>iFrames are the answer</h3>
+		<p>The answer is to put the map into its own page and host it in a Windows phone iframe.</p>
+		<p>In the image below the map constructor has been taken out and the code from the Windows Phone Navigation tempalte has been put back in.  Notice in the <strong>home.html</strong> file we have the references to the <strong>Microsft.Phone.WinJS.2.1</strong>libraries.  I have not been able to confirm it but it is these libraries which are a factor in the difficulty of converting an app made for a tablet or desktop to the phone.  This is why I am going into such detail to ensure the gap in documentation can be bridged.</p>
+		<p>In the second red rectangle on the between <strong>24</strong> and <strong>27</strong> we have inserted the code for the iframe.  I recommend keeping this code the same for each iframe I use in the project.</p>
+		<p>In this code block do pay attention to the syntax used by Microsoft in the iframe <strong>src</strong> path.  Notice how there is a prefix in the src of <strong>ms-appx-web:///</strong>.  This is how Microsoft has ben JavaScript to do it's bidding in the Windows Phone.  As you might have guessed the three <strong>///</strong> is how Microsoft says this is a windows phone page and not a regular html page.</p>
+		<img  class="img-responsive" src="images/iframe.png" alt="Example of the working iframe should be here.">
+		<h3>Placing the map file into the proper place</h3>
+		<p>So next we are going to make a new folder at the root of the project and call it <strong>html</strong>.  I have used this file folder as habbit to put most of iframe content in it.  I do this more out of habbit now and a desire not to change the code in my copy and pasted iframe div as little as possible.</p>
+		<p>Moving the files around won't cause an issues, as far as I know, but I simply do it to change as little code as possbile and then for consistency. Now that we have an iframe referencing our map.html file we can copy and paste the code from the Microsoft AJAX API directly into the file and viola!  It works.  This code is also on the previous page near the bottom(<strong><a href="stepThree.html">Step Three</a></strong>) so I will not include it again.</p>
+		<img class="img-responsive" src="images/example_working_03.png" alt="working_exmaple_03.png is missing">
+		<h3>A Map!  Why is it so small?</h3>
+		<p>Yes it is small and this is dictated by the normal rules of CSS and HTML and the inheretence of certain objects and their properties.  It is not as simple as it would be in a straight web page as there are just more CSS Features added by Microsoft to fit into their different templates such as the Pivt template.  We will resize the map and and deal with panning of the map in the next step.  But the important part is we do have a fully functioning Bing map with our credentials which can be zoomed in and out of and panned around.</p>
+		<p></p>
+		<img class="img-responsive" src="images/example_working_01.png" alt="example_working_01.png is not loaded">
+		<br><br>
+		<button type="button" class="btn btn-primary btn-lg" onclick="goStepFive()">Chaning some sizes, Step Five	
+			</button>
+		<br><br><br><br>
+	</div>
+	</div>
+</div>
+</body>
+</html>

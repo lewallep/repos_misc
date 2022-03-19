@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>restList</title>
+
+    <link href="restList.css" rel="stylesheet" />
+    <script src="restList.js"></script>
+</head>
+<body>
+    <div class="restList fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to restList</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <h2>Here we will get the User's Data</h2>
+            <button id="getRest">Get Restaurant</button><br />
+            <label>Restaurant Name: </label><p id="restName"></p>
+            <label>UserName: </label><p id="restAddress"></p>
+            <label>New Name: </label><input id="editRestName" type="text" />
+            <button id="editEntry">Edit Restaurant Name</button><br />
+            <button id="navNewEntry">Nav to Entry</button>
+        </section>
+    </div>
+</body>
+</html>

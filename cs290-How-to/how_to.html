@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phlip Lewallen's How-To guide for data.nasa.gov</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="how_to.css" rel="stylesheet">
+</meta>
+<script type="text/javascript" language="javascript" src="pcl_js.js">
+
+</script>
+</head>
+
+<body>
+<div id="container">
+	
+<div id="left">
+	<h4>Method References</h4>
+	<a href="get_recent_datasets.html">get_recent_datasets</a><br>
+	<a href="get_dataset.html">get_dataset</a><br>
+	<a href="get_date_datasets.html">get_date_datasets</a><br>
+	<a href="get_category_datasets.html">get_category_datasets</a><br>
+	<a href="get_tag_datasets.html">get_tag_datasets</a><br>
+	<a href="get_search_results.html">get_search_results</a><br>
+	<a href="get_date_index.html">get_date_index</a><br>
+	<a href="get_category_index.html">get_category_index</a><br>
+	<a href="get_recent_datasets.html">get_recent_datasets</a><br>
+</div><!-- end of the div "left" -->
+	
+<div id="center">
+	<h1>A How To Guide for the data.nasa.gov API</h1>
+	<h4>by Philip Lewallen</h4>
+	<br>
+	<h3>Overview of this guide</h3>
+	<p>This guide is for the data.NASA.gov API.  The will cover the available functions for the API for www.data.nasa.gov, and how the data returned is formatted.  Lastly it will provide examples on how to iterate through the JSON data and display it. On the left hand columns of this descrtiption there are links to the documentation on the methods of the API.  At the bottom of each page there is going to be a link to the next page in the guide.</p><br>
+	
+	<h3>What is "data.nasa.gov"?</h3>
+	<p><b>data.nasa.gov</b> is a project by NASA to make all of the NASA's data available to the public for research purposes.  According to the <a href="http://data.nasa.gov/about/">home page of data.nasa </a>there is a alot of data available. One example of how much data NASA has is just one mission from the Earth Observing System Data and Information Systems (EOSDIS) has stored mroe than 3 petabytes of data since 2005.  This api was developed to track the changes in this data.</p><br>
+	
+	<h3>What does the data.nasa.gov API contain</h3>
+	<p>It contains 9 methods.  These methods are explained later on in this guide.</a>If you would like to see NASA's own documentation on the subject it can be found <a href="http://data.nasa.gov/api-info/">here.</a>  However, not to be unkind, NASA's documentation is perhaps, in need of a little polshing.  Just my humble opinon.  But NASA's documentation does list ten methods in their API, and I can only 9.  Qualification: I have made mistakes worse than miscounting, in my life.</p><br>
+	
+	<h3>What do these methods do exactly?</h3>
+	<p>These methods do many things.  Well one thing actually.  They return a JSON object listing the information regarding the changed data from your search parameters.  That is it.  Only the changes.</p><br>
+
+	<h3>Why are the changes in the data important?</h3>
+	<p>Because there is so much data available you couldn't download or search the database effecitvely.  So this list of data and it's changes provides the lightest footprint possible for the user to navigate and disseminate for use.  And there is a lot of data in these change lists.  We will go over all of the different data fields in the JSON objects the methods return later in this guide.</p><br>
+
+	<h3><a href="how_to_methods.html">Onto how the Methods return data! >></a></h3>
+</div>
+<div id="spacer"></div>
+	
+<div id="right">
+	<h4>Quick Links</h4>
+	<a href="how_to.html">Guide Home</a><br>
+	<a href="how_to_methods.html">Methods Overview</a><br>
+	<a href="how_to_JSON_data.html">JSON data 01</a><br>
+	<a href="how_to_JSON_data02.html">JSON data 02</a><br>
+</div>
+
+</div><!-- The end of the container div -->
+
+</body>
+</html>

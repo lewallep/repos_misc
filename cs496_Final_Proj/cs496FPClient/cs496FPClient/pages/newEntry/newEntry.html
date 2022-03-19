@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>newEntry</title>
+
+    <link href="newEntry.css" rel="stylesheet" />
+    <script src="newEntry.js"></script>
+</head>
+<body>
+    <div class="newEntry fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to newEntry</span>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <h2>Here the User makes a new restaurant</h2>
+            <label>ID:</label><input id="rid" type="text" value="6" />
+            <label>Name:</label><input id="rname" type="text" value="Foood Inc" />
+            <label>First Name: </label><input id="fname" type="text" value="Reese" />
+            <label>Last Name: </label><input id="lname" type="text" value="Bobby" />
+            <label>Menu Item Name: </label><input id="itemName" type="text" value="Pretzels" />
+            <label>Menu Item Calores: </label><input id="calories" type="number" value="500" />
+            <label>Menu Item Price: </label><input id="price" type="number" value="1.00" />
+            <label>Address Street: </label><input id="streetNumber" type="text" value="Main St." />
+            <label>Address City: </label><input id="city" type="text" value="Eugene" />
+            <label>Address State:</label><input id="state" type="text" value="Oregon" />
+            <label>Address ZipCode: </label><input id="zipCode" type="text" value="90210" />
+            <button id="postSubmit">POST IT!</button>
+            <div id="locationSection" aria-label="Location section" style="height:600px;">
+                <!-- <h2 class="group-title" role="heading">Location</h2> -->
+                <iframe id="map"  src="ms-appx-web:///html/map.html" aria-label="Map"></iframe>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

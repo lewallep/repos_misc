@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Step Five</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1 style="text-align: center;">How to use Bing Maps with Windows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+	<div class="col-md-2">
+		<h4>Navigation</h4>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goHome()">Home</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepOne()">Step one</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepTwo()">Step two</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepThree()">Step Three</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFour()">Step Four</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFive()">Step Five</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSix()">Step Six</button>
+		<button type="button" class="btn btn-default btn-sm btn-block">Step Seven</button>
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+	</div>
+	<div class="col-md-7">
+		<h3>Passing Data to the JavaScript Function into the Map Pages</h3>
+		<p>I use one particular library to save data either locally or to say the cloud to maintan a session state between power on/off's.  This example uses session state becaue I had it ready from another project.  However if you want to change it to local storage you can either use Visual Studio's intellisense, or you can check out this <a href="https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.applicationdata.current.aspx">library of features here.</a></p>
+		<p>The first thing to do is to save some data to one of the <strong>Windows.Storage.ApplicationData.current</strong> storage options. So add the code seen below into our MapApp project file <strong>home.js</strong>.</p>
+		<img class="img-responsive" src="images/example_working_13.png" alt="example_working_13.png">
+		<h3>Summary of the code above</h3>
+		<p><strong>Line 9 </strong>initializes a variable to access the roaming settings without typing the entire library name each time we want to add some data to the roaming settings.</p>
+		<p><strong>Line 11 </strong>actually puts some data into the element of the array "<strong>infoForPage2</strong>".  In this case, for simplicity only, I have chosen simply to hard code the string into the array element.  This can be easily substituted out for any JavaScript variable or function returning a value.</p>
+		<p>Then in the last part I have simply changed back our navigation handling to the original correct code.</p>
+		<h3>Add the HTML</h3>
+		<p>Basic paragraph tag here.  All that is important is we can reference our element by id so choose a unique id value.  The only code I have added is on <strong>Line 22</strong>.</p>
+		<img class="img-responsive" src="images/example_working_14.png" alt="example_working_14.png">
+		<h3>Add the JavaScript for the receiving page</h3>
+		<p>Hopefully at this point there is not too much new.  This is just calling the "<strong>infoForPage2</strong>" element and assigning it to our paragraph tag.</p>
+		<img class="img-responsive" src="images/example_working_15.png" alt="example_working_15.png">
+		<h3>If you have followed this How-To your emulator should look like mine below</h3>
+		<p>Go ahead and run your emulator, hit the navigation button on the home page, and see if your page2 looks like mine.  And you can see from your code you have inserted the little hard coded string into our paragraph tag.</p>
+		<img class="img-responsive" src="images/example_working_16.png" alt="exmaple_working_16.png">
+		<br><br>
+		<button type="button" class="btn btn-primary btn-lg" onclick="goSummary()">Go to the final Summary</button>
+		<br><br><br><br>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CRRD: Business List</title>
+
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+
+    <link href="business-list.css" rel="stylesheet" />
+    <script src="business-list.js"></script>
+</head>
+<body>
+    <div class="wrapper page-business-list">
+        <nav aria-label="Top navigation" class="topnav">
+            <div class="left-nav">&lt; Home</div>
+            <div class="pagetitle"></div>
+            <div class="right-nav">Map View</div>
+        </nav>
+        <section aria-label="Main content" role="main">
+            <div id="business-row-template" data-win-control="WinJS.Binding.Template">
+                <div class="business-name"><span data-win-bind="textContent: name"></span></div>
+                <div class="business-city"><span data-win-bind="textContent: city"></span></div>
+                <div class="business-distance"><span data-win-bind="textContent: distance"></span>mi</div>
+                <input type="hidden" class="business-id" data-win-bind="value: id" />
+            </div>
+            <div id="business-rows"></div>
+        </section>
+    </div>
+</body>
+</html>

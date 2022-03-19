@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OSU CS290 Final Project</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="fp_style.css">
+	
+<script>
+function loginExisting()
+{
+	var rUserName = document.getElementById('rUserName').value;
+	var rUserPw = document.getElementById('rUserPw').value;
+
+	var pDataExisting = "rUserName=" + rUserName + "&rUserPw=" + rUserPw;
+
+	if (window.XMLHttpRequest) 
+	{
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp = new XMLHttpRequest();
+  	} else { // code for IE6, IE5
+    	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  	}
+	xmlhttp.onreadystatechange = function() 
+	{
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+		{
+		 	if (xmlhttp.responseText == 1) 
+			{
+				document.getElementById('errorMsg').innerHTML = "Your username and password has been accepted.";
+				//Stack Overflow
+				window.location.assign("http://web.engr.oregonstate.edu/~lewallep/CS290/f_proj/fp_menus.php");
+			}
+			else 
+			{
+				document.getElementById('errorMsg').innerHTML = xmlhttp.responseText;		
+			}
+		}
+	}
+	xmlhttp.open("POST", "fp_login.php", true);
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlhttp.send(pDataExisting);
+
+	return;
+}
+
+function getNewUser() {
+
+	var tNode;
+	var h2;
+
+	var newUserName = document.getElementById('nw_name').value;
+	var newUserPw1 = document.getElementById('nwpw1').value;
+	var newUserPw2 = document.getElementById('nwpw2').value;
+	var newRestaurant = document.getElementById('new_rest').value;
+
+	var pDataNew = "newUserName=" + newUserName + "&newUserPW=" + newUserPw1 + "&newRestaurant=" + newRestaurant;
+
+	//do basic error checking here.
+	var newUserNameLength = newUserName.length;
+	if (newUserNameLength < 6)
+	{
+		document.getElementById('errorMsg').innerHTML = "The Username you entered is too short.  Please enter another Username.";
+		//Ajax call to the database to see if the username and password are available.
+	}
+	else if (newUserPw1.length < 8) 
+	{
+		document.getElementById('errorMsg').innerHTML = "The Password you entered is too short.  Please make your password at least 8 characters long.";
+	}
+	else if (newUserPw1 !== newUserPw2) 
+	{
+		document.getElementById('errorMsg').innerHTML = "The passwords you have entered do not match.";
+	}
+	else
+	{
+		if (window.XMLHttpRequest) 
+		{
+	    // code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp = new XMLHttpRequest();
+	  	} else { // code for IE6, IE5
+	    	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	  	}
+		xmlhttp.onreadystatechange = function() 
+		{
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+			{
+				if (xmlhttp.responseText == 1) 
+				{
+					document.getElementById('errorMsg').innerHTML = "Your username and password has been accepted.";
+					//Stack Overflow
+					window.location.assign("http://web.engr.oregonstate.edu/~lewallep/CS290/f_proj/fp_menus.php");
+				}
+				else 
+				{
+					document.getElementById('errorMsg').innerHTML = xmlhttp.responseText;		
+				}
+
+			}
+		}
+		xmlhttp.open("POST", "fp_login.php", true);
+		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xmlhttp.send(pDataNew);
+	}
+
+	return;
+}
+
+</script>
+
+</head>
+<body>
+<div id="container">
+	<h1>Your Online Menu</h1>
+	<h3><a href="#Help">Help - About</a></h3>
+</div>
+<p><b>After you create a valid name and password you will be redirected to the menu page.</b></p>
+<fieldset>
+<legend>Returning Users Login</legend>
+	Username: <input type="text" name="r_user_name" id="rUserName"><br>
+	Password: <input type="password" name="r_user_pw" id="rUserPw"><br>
+	<input type="submit" value="Log In Existing User" name="existing_User" onclick="loginExisting()"/>
+</fieldset>
+<br>
+<fieldset>	
+<legend>New Users Login</legend>
+	Username: <input type="text" name="new_user_name" id="nw_name"/><br>
+	Password: <input type="password" name="new_user_pw" id="nwpw1"/><br>
+	Please Re-enter your password: <input type="password" name="new_user_pw_2" id="nwpw2"/><br>
+	The name of the Resturaunt you are affiliated with <input type="text" name="new_restaurant" id="new_rest"/><br>
+	<input type="submit" value="Create New User" name="new_user_submit" onclick="getNewUser()"/>
+</fieldset>
+<br>
+
+<div>
+	<h2>Errror Messages</h2>
+	<h3 id="errorMsg"></h3>
+</div>
+
+
+<!-- 
+	This is the portal to my final project.  The place where everyone has to go to first.
+
+	It will contain the following,
+
+	1.	The forms for existing user to login.
+	2.  A set of forms for a new user to to sign up.
+	3. 	If a user enters an incorrect password or username (for security it will not tell the user which one is incorrect) there will 		be a message below the forms instructing the user there was an error and to try again.
+	4.	The forms will be submitted to fp_login.php.
+	5.	fp_login.php will respond to AJAX request from fp_index.html by sending back a JSON object which will identify if there was an error.
+	6.	If there was no error loggin in the user will be redirected to fp_menus.php and the user will see all of their menu items.
+
+	
+	note to send information back to my ajax reqeust use a header and change the content type.
+	http://stackoverflow.com/questions/19942610/how-do-i-pass-json-back-to-my-ajax-request-from-php
+
+
+-->
+<a id="Help"></a>
+<h3>Help for this webpage "Your Online Menu"</h3>
+<p>I wanted to have some excuse to have a link to another part of the same page.  I am mildly happy with the results.</p>
+<p>This menu allows users to securely store their business menu online securely.  You setup your account with your unique username and password and then you enter in your menu items and the name of your restaurant into the online database.  Then you are able to access and show off your menu items to anyone anywhere. </p>
+<h3>Username and Passwords for this site are required to have the following attributes</h3>
+<ul>
+	<li>Usernames need to be at least 6 characters in length.</li>
+	<li>Passwords need to be 8 characters long.</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<script type="text/javascript" language="javascript">
+	//these global variables are patches in this case to get my variables into my checkState() function.
+	var pages;					//Declared globally as a patch.
+	var globalCounter = 0;
+
+	//This grabs the data to parse out the selected languages.  It makes sure I am getting the data from the form.
+	function selLanguages() {
+
+		var form_in = document.getElementsByName('l_type');
+		var lanList = [];
+
+		for (var i = 0; i < form_in.length; i++) {
+			if (form_in[i].checked) {
+				lanList.push(form_in[i].value);
+			}	
+		}
+
+		return lanList;
+	}	//End of selLanguages();
+
+	function displayResults (jsonObj) {
+		console.log("displayResults() has been called successfully");
+		console.log(jsonObj);
+
+		var a;
+		var atext;
+		var hrefLink;
+		var language;
+		var space;
+		var spaceT;
+		var language_match = false;
+		var inFavorites = false;
+
+		var lanList = selLanguages();
+
+
+		for (var obj1 in jsonObj) {
+
+			for (var fData in jsonObj[obj1].files) {
+				var oneFData = jsonObj[obj1].files[fData];
+
+				if (lanList.length === 0) {
+
+					for (var i = 0; i < localStorage.length; i++){
+
+						var locUrl = localStorage.getItem(localStorage.key(i));
+						if (locUrl == jsonObj[obj1].url) {
+							inFavorites = true;
+						}
+					}
+
+					if( inFavorites === false) {
+						a = document.createElement("p");
+						atext = document.createTextNode(jsonObj[obj1].description);
+						a.appendChild(atext);
+						document.body.appendChild(a);
+
+						a = document.createElement("a");
+						atext = document.createTextNode(jsonObj[obj1].url);
+						a.appendChild(atext);
+						a.href = jsonObj[obj1].url;
+						document.body.appendChild(a);
+
+						var br = document.createElement("br");
+						a.appendChild(br);
+					}
+
+					inFavorite = false;
+				}
+				else {				
+					for (var i = 0; i < lanList.length; i++) {
+
+						if(oneFData.language == lanList[i]) {
+							language_match = true;
+						}
+					}
+
+					if (language_match === true) {
+						console.log("We have found a language match");
+
+						for (var i = 0; i < localStorage.length; i++){
+
+							var locUrl = localStorage.getItem(localStorage.key(i));
+							if (locUrl == jsonObj[obj1].url) {
+								inFavorites = true;
+							}
+						}
+
+						if( inFavorites === false) {
+							a = document.createElement("p");
+							atext = document.createTextNode(jsonObj[obj1].description);
+							a.appendChild(atext);
+							document.body.appendChild(a);
+
+							a = document.createElement("a");
+							atext = document.createTextNode(jsonObj[obj1].url);
+							a.appendChild(atext);
+							a.href = jsonObj[obj1].url;
+							document.body.appendChild(a);
+
+							var br = document.createElement("br");
+							a.appendChild(br);
+						}
+
+						inFavorite = false;
+					}
+
+					language_match = false;
+				}
+			}
+			++globalCounter;
+		}
+	}	//End of displayResults;
+
+	function checkState() {	//This function checks the state to make sure the Ajax command
+		//is ready.
+
+		if (this.readyState === 4 && this.status === 200) {
+			console.log("readyState === 4 and status === 200");
+
+			var tempObj = JSON.parse(this.responseText);
+			displayResults(tempObj);
+		}
+	}
+
+	function loadGists(pages) {
+
+		var p = 1;
+
+		for (var i = 0; i < pages; ++i) {
+
+			if (window.XMLHttpRequest) {
+				httpRequest = new XMLHttpRequest();
+			}
+			else if (window.ActiveXObject) {
+				try {
+					httpRequest = new ActiveXObject("Msxm12.XMLHTTP");
+				}
+				catch (e) {
+					try {
+						httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					catch (e){}
+				}
+			}	//End of if else if statement.
+
+			var url = "https://api.github.com/gists/public?page=" + p + "&per_page=30";
+			++p;	//increment the page index by one to get the right page back from gists.
+
+			this.httpRequest.onreadystatechange = checkState;
+			this.httpRequest.open('GET', url, true);
+			this.httpRequest.send();
+
+		}	//End of for loop.
+
+		return;
+	}	// end loadGists(pages, lanList);
+
+	//A test function to append to the end of the document the integer value.
+	function showGists() {
+
+		var form = document.getElementsByName('gists');
+
+		for (var i = 0; i < form.length; i++) {
+			if ( form[i].checked ) {
+				pages = form[i].value;
+				break;
+			}
+		}
+
+		loadGists(pages);
+
+	}	//End of appendGistsSelect();
+
+	function setItem() {
+
+		var description = document.getElementsByName('description_entry')[0].value;
+		var url = document.getElementsByName('url_entry')[0].value;
+
+		console.log(description);
+		console.log(url);
+
+		localStorage.setItem(description, url);
+
+		return;
+	}
+
+	function removeItem() {
+
+		var desc = document.getElementsByName('description_entry')[0].value;
+		localStorage.removeItem(desc);
+
+		return;
+	}
+
+	function clearItems() {
+
+		localStorage.clear();
+
+		return;
+	}
+
+	window.onload = function() {
+
+		var a;
+		var atext;
+
+		console.log("local storage size is " + localStorage.length);
+
+		for (var i = 0; i < localStorage.length; i++) {
+
+			var localUrl = localStorage.getItem(localStorage.key(i));
+
+			a = document.createElement("p");
+			atext = document.createTextNode(localStorage.key(i));;
+			a.appendChild(atext);
+			document.body.appendChild(a);
+
+			a = document.createElement("a");
+			atext = document.createTextNode(localUrl);
+			a.appendChild(atext);
+			a.href = localUrl;
+			document.body.appendChild(a);
+
+			console.log(localUrl);
+
+		}
+
+		a = document.createElement("hr");
+		document.body.appendChild(a);
+
+		return;
+	}
+
+</script>
+</head>
+<body>
+	<h2>This is Philip Lewallen's Assignment 2</h2>
+	<h3>Please select how many pages of Gists you would like to see.</h3>
+	<h4>You may select between 1 and 5 pages of Gists.  A page has 30 Gists.</h4>
+	<fieldset>
+		<legend>Number of Gist Pages Selector</legend>
+		<form name="gist_pages" id="gp1">
+			<input type="radio" name="gists" value="1">One Page<br>
+			<input type="radio" name="gists" value="2" checked>Two Pages<br>
+			<input type="radio" name="gists" value="3">Three Pages<br>
+			<input type="radio" name="gists" value="4">Four Pages<br>
+			<input type="radio" name="gists" value="5">Five Pages<br>
+	<br>
+	<h4>Below, please check the boxes to see the results for the Gists which were written in the Language which is selected.</h4>
+		<legend>Language Specifier</legend>
+		<form name="language_selector">
+			<input type="checkbox" name="l_type" id="Python" value="Python">Python<br>
+			<input type="checkbox" name="l_type" id="JSON" value="JSON">JSON<br>
+			<input type="checkbox" name="l_type" id="JavaScript" value="JavaScript">JavaScript<br>
+			<input type="checkbox" name="l_type" id="SQL" value="SQL">SQL<br>
+			<input type="checkbox" name="l_type" id="C" value="C">C<br>
+			<input type="checkbox" name="l_type" id="C++" value="C++">C++<br>
+			<input type="checkbox" name="l_type" id="Pearl" value="Pearl">Pearl<br>
+		</form>
+		<button onclick="showGists()">Get Gists</button>
+	</fieldset>
+	<form>
+		Please enter Your Description of this favorite Favorite<input type="text" name="description_entry">
+	</form>
+		Please enter the URL of your Favorite Gist<input type="text" name="url_entry">
+	<form>
+	</form>
+	<button onclick="setItem()">Set Favorite Gists</button> 
+	<button onclick="removeItem()">Remove Favorite</button>
+	<button onclick="clearItems()">Clear All Favorites</button>
+	<p><b>Favorites:  That are stored in Local Storage</b></p>
+
+</body>
+</html>

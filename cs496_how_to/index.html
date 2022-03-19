@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>How to Windows Phone 8.1 Maps API</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="http://web.engr.oregonstate.edu/~lewallep/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="pcl_js.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<h1 style="text-align: center;">How to use Bing Maps with Widnows Phone 8.1</h1>
+	<h4 style="text-align: center;">The JavaScript API Version</h4>
+	<br><br>
+	<div class="row">
+		<div class="col-md-2">
+			<h4>Navigation</h4>
+			<button class="btn btn-default btn-sm btn-block">Home</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepOne()">Step One</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepTwo()">Step Two</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepThree()">Step Three</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFour()">Step Four</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepFive()">Step Five</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSix()">Step Six</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goStepSeven()">Step Seven</button>
+			<button type="button" class="btn btn-primary btn-sm btn-block" onclick="goSummary()">Summary</button>
+		</div>
+		<div class="col-md-7">
+			<h3>What is this How-To going to explain</h3>
+			<p>The goal of this How-To is to make it as easy to use Bing Maps in a Windows Phone 8.1 App as it is in a tablet App.  I started using the Windows Phone 8.1 Javascript API for a school project and found a huge wealth of information from Microsoft on their API's for their products, and E books, and Videos but amazingly there was not a tutorial which covered actually getting started with Bing Maps in a Windows Phone using JavaScript.  So this guide is intended for a person with a background in using JavaScript and who wants to do a basic Windows Phone App with a Bing Map.</p>
+			<br>
+			<h3>Why to Choose JavaScript for the Windows Phone</h3>
+			<p>In my opinion, after doing this once is, choose JavaScript for the windows phone if you really, really, don't want to learn XAML and C#.  Because if you use JavaScript already you still have to learn a fair amount of specific libraries from Microsoft to get the phone JavaScript to work right.  Also, while the JavaScript app runs very well it still runs the JavaScript through an intepreter just like a browser does.  So this means your app will never be quite as fast or efficient as a C# app derived app could be.  Even though I have only done one project with the Windows Phone I really mean this.  If I ever do another project for the Windows Phone, I will learn XAML and C#.</p>
+			<br>
+			<h3>But Phil, is JavaScript for the Phone really that bad?</h3>
+			<p>Yeup.  The documentation compared with Microsoft's doucmentation for other languages and support in Visual Studio combined with the specific JavaScript for windows phone libraries make using JavaSciprt a lot less beneficial than one might at first think.  This is my opinion from my experience.</p>
+			<p>For example, look at the image of Phone app layout below.</p>
+			<p>On the left is the preview you get when using XAML to layout your phone.  I could not get this view to with JavaScript.  It certainly is a time saver to be able to click and drag common elements to your phone layout and actually see the attributes of the XAML tags chaning in real time.  This really helped me understand what I was doing when I went back to codeing by hand or when I had to design an algorithm which would interact with the laytout of the phone pages.
+			<img class="img-responsive" src="images/vs_xaml_preview.png" alt="There should be an image here of Visual 		Studio">
+			<button type="button" class="btn btn-primary btn-lg" onclick="goStepOne()">
+				Onto Actually doing work with JavaScript!</button>
+			<br><br><br><br>
+		</div>
+	</div>
+</div>
+</body>
+</html>

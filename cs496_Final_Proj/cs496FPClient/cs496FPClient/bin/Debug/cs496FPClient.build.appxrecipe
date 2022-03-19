@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PCL_WORKSTATION</Machine>
+    <WindowsUser>Philip</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ccce5620-cd1f-42be-a34e-d05e525dd4b0</PackageIdentityName>
+    <IntermediateOutputPath>e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\css\ui-themed.css">
+      <PackagePath>css\ui-themed.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\css\ui-themed.theme-dark.css">
+      <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\css\ui-themed.theme-light.css">
+      <PackagePath>css\ui-themed.theme-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\newEntry\newEntry.css">
+      <PackagePath>pages\newEntry\newEntry.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\restList\restList.css">
+      <PackagePath>pages\restList\restList.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\html\map.html">
+      <PackagePath>html\map.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\newEntry\newEntry.html">
+      <PackagePath>pages\newEntry\newEntry.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\restList\restList.html">
+      <PackagePath>pages\restList\restList.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\images\SplashScreen.scale-240.png">
+      <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\app.js">
+      <PackagePath>js\app.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\bootstrap.js">
+      <PackagePath>js\bootstrap.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\bootstrap.min.js">
+      <PackagePath>js\bootstrap.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\helpers.js">
+      <PackagePath>js\helpers.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery-2.1.1.intellisense.js">
+      <PackagePath>js\jquery-2.1.1.intellisense.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery-2.1.1.js">
+      <PackagePath>js\jquery-2.1.1.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery-2.1.1.min.js">
+      <PackagePath>js\jquery-2.1.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery.validate-vsdoc.js">
+      <PackagePath>js\jquery.validate-vsdoc.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery.validate.js">
+      <PackagePath>js\jquery.validate.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery.validate.min.js">
+      <PackagePath>js\jquery.validate.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery.validate.unobtrusive.js">
+      <PackagePath>js\jquery.validate.unobtrusive.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery.validate.unobtrusive.min.js">
+      <PackagePath>js\jquery.validate.unobtrusive.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\knockout-3.2.0.debug.js">
+      <PackagePath>js\knockout-3.2.0.debug.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\knockout-3.2.0.js">
+      <PackagePath>js\knockout-3.2.0.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\modernizr-2.8.3.js">
+      <PackagePath>js\modernizr-2.8.3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\respond.js">
+      <PackagePath>js\respond.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\respond.matchmedia.addListener.js">
+      <PackagePath>js\respond.matchmedia.addListener.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\respond.matchmedia.addListener.min.js">
+      <PackagePath>js\respond.matchmedia.addListener.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\respond.min.js">
+      <PackagePath>js\respond.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\newEntry\newEntry.js">
+      <PackagePath>pages\newEntry\newEntry.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\pages\restList\restList.js">
+      <PackagePath>pages\restList\restList.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\js\jquery-2.1.1.min.map">
+      <PackagePath>js\jquery-2.1.1.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="e:\philip\my documents\visual studio 2013\Projects\cs496FPClient\cs496FPClient\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

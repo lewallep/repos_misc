@@ -1,0 +1,20 @@
+﻿#business-rows > div {
+    border-bottom: 1px #444 solid;
+    padding: 10px 0;
+    display: -ms-grid;
+    -ms-grid-rows: 25px 25px;
+    -ms-grid-columns: 1fr;
+}
+    .business-name {
+        -ms-grid-row: 1;
+        font-size: 16pt;
+    }
+    .business-city {
+        -ms-grid-row: 2;
+        -ms-grid-column-align: start;
+        font-size: 12pt;
+    }
+    .business-distance {
+        -ms-grid-row: 2;
+        -ms-grid-column-align: end;
+    }

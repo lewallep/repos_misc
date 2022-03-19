@@ -1,0 +1,82 @@
+﻿.homepage {
+    -ms-grid-rows: 60px 140px 1fr;
+}
+
+    .homepage header[role=banner] {
+        display: -ms-grid;
+        -ms-grid-rows: 1fr;
+        -ms-grid-columns: 120px 1fr;
+        -ms-grid-row: 2;
+        margin: 24px;
+    }
+
+        h1 {
+            font-size: 20pt;
+            color: #2f4c5e;
+        }
+
+        .logo {
+            -ms-grid-column: 1;
+            -ms-grid-column-align: start;
+            -ms-grid-row-align: center;
+        }
+
+        .titlearea {
+            -ms-grid-column: 2;
+            -ms-grid-column-align: center;
+            -ms-grid-row-align: center;
+        }
+
+    .homepage section[role=main] {
+        -ms-grid-row: 3;
+        display: -ms-grid;
+    }
+
+        .category-select {
+            -ms-grid-row: 1;
+            display: -ms-grid;
+            -ms-grid-columns: 1fr;
+            -ms-grid-rows: auto auto auto;
+            background: #2f4c5e;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+            .category-select label {
+                font-size: 16pt;
+            }
+            .main-category-select {
+                -ms-grid-row: 1;
+            }
+            .sub-category-select {
+                -ms-grid-row: 2;
+            }
+            .category-select-submit {
+                -ms-grid-row: 3;
+                -ms-grid-column-align: end;
+                border-color: #fff;
+                color: #fff;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+        .republic-links {
+            -ms-grid-row: 2;
+            background: #cb8312;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+            .republic-links a {
+                color: #2f4c5e;
+                font-size: 11pt;
+            }
+
+        .csc-logo {
+            -ms-grid-row: 3;
+            -ms-grid-column-align: center;
+        }
+            .csc-logo em {
+                margin-left: 6px;
+            }

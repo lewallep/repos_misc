@@ -1,0 +1,15 @@
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Release\resources.pri
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Release\AppxManifest.xml
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bin\Release\CS419Reuse.build.appxrecipe
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\priconfig.xml
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\priconfig.xml.intermediate
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\layout.resfiles
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\layout.resfiles.intermediate
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\resources.resfiles
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\resources.resfiles.intermediate
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\pri.resfiles
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\pri.resfiles.intermediate
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\qualifiers.txt
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\qualifiers.txt.intermediate
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\MultipleQualifiersPerDimensionFound.txt
+E:\Philip\GitHub\cs419s15App\CS419Reuse\CS419Reuse\bld\Release\ProjectArchitectures.txt
